@@ -11,7 +11,7 @@ import { APIidComponent } from './apiid/apiid.component';
     APIidComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
   ]
 })
 export class ServerModule { }
