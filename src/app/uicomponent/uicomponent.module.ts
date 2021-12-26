@@ -10,6 +10,8 @@ import { FootertopComponent } from './footertop/footertop.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { ServerModule } from '../server/server.module';
 import { UserModule } from '../user/user.module';
+import { ContentComponent } from './content/content.component';
+import { BlogComponent } from './blog/blog.component';
 
 
 
@@ -22,7 +24,9 @@ import { UserModule } from '../user/user.module';
     RightsidebarComponent,
     LeftsidebarComponent,
     FootertopComponent,
-    HomepageComponent
+    HomepageComponent,
+    ContentComponent,
+    BlogComponent
   ],
   imports: [
     CommonModule,
