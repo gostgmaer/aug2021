@@ -16,6 +16,11 @@ import { ServerModule } from '../server/server.module';
   imports: [
     CommonModule,
     ServerModule
+  ],
+  exports:[
+    LoginComponent,
+    RegistrationComponent,
+    AuthComponent
   ]
 })
 export class UserModule { }
