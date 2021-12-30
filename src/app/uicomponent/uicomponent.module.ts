@@ -13,6 +13,7 @@ import { UserModule } from '../user/user.module';
 import { ContentComponent } from './content/content.component';
 import { BlogComponent } from './blog/blog.component';
 import { LandingComponent } from './landing/landing.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 
 
@@ -28,7 +29,8 @@ import { LandingComponent } from './landing/landing.component';
     HomepageComponent,
     ContentComponent,
     BlogComponent,
-    LandingComponent
+    LandingComponent,
+    NotFoundComponent
   ],
   imports: [
     CommonModule,
@@ -46,7 +48,8 @@ import { LandingComponent } from './landing/landing.component';
     HomepageComponent,
     ContentComponent,
     BlogComponent,
-    LandingComponent
+    LandingComponent,
+    NotFoundComponent
 
   ]
 })
