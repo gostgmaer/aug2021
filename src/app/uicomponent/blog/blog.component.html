@@ -1,1 +1,23 @@
-<p>blog works!</p>
+<div>
+  Like getHeroes(), getHero() has an asynchronous signature. It returns a mock hero as an Observable, using the RxJS of() function.
+
+You'll be able to re-implement getHero() as a real Http request without having to change the HeroDetailComponent that calls it.
+
+Try it
+The browser refreshes and the application is working again. You can click a hero in the dashboard or in the heroes list and navigate to that hero's detail view.
+
+If you paste localhost:4200/detail/11 in the browser address bar, the router navigates to the detail view for the hero with id: 11, "Dr Nice".
+
+Find the way back
+By clicking the browser's back button, you can go back to the hero list or dashboard view, depending upon which sent you to the detail view.
+
+It would be nice to have a button on the HeroDetail view that can do that.
+
+Add a go back button to the bottom of the component template and bind it to the component's goBack() method.
+
+src/app/hero-detail/hero-detail.component.html (back button)
+content_copy<!-- <button (click)="goBack()">go back</button> -->
+Add a goBack() method to the component class that navigates backward one step in the browser's history stack using the Location service that you injected previously.
+
+
+</div>
