@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { RouterModule, Routes } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
@@ -16,41 +16,18 @@ import { LandingComponent } from './landing/landing.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 
 
+const routes: Routes = [
+  { path: 'home', component: LandingComponent },
+  { path: 'homepage', component: HomepageComponent },
+  { path: 'blog', component:BlogComponent},
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '**', component: NotFoundComponent }
+];
 
 @NgModule({
-  declarations: [
-    HeaderComponent,
-    FooterComponent,
-    SidebarComponent,
-    SecondheaderComponent,
-    RightsidebarComponent,
-    LeftsidebarComponent,
-    FootertopComponent,
-    HomepageComponent,
-    ContentComponent,
-    BlogComponent,
-    LandingComponent,
-    NotFoundComponent
-  ],
-  imports: [
-    CommonModule,
-    ServerModule,
-    UserModule
-  ],
-  exports:[
-    HeaderComponent,
-    FooterComponent,
-    SidebarComponent,
-    SecondheaderComponent,
-    RightsidebarComponent,
-    LeftsidebarComponent,
-    FootertopComponent,
-    HomepageComponent,
-    ContentComponent,
-    BlogComponent,
-    LandingComponent,
-    NotFoundComponent
-
-  ]
+  imports: [RouterModule.forChild(routes),
+  UserModule],
+  exports: [RouterModule,]
 })
-export class UicomponentModule { }
+export class UicomponentRoutingModule { }
+export const UIroutingcomponent ={LandingComponent,HomepageComponent,BlogComponent}
