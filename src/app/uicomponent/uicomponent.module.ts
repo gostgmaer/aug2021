@@ -12,6 +12,7 @@ import { ServerModule } from '../server/server.module';
 import { UserModule } from '../user/user.module';
 import { ContentComponent } from './content/content.component';
 import { BlogComponent } from './blog/blog.component';
+import { LandingComponent } from './landing/landing.component';
 
 
 
@@ -26,12 +27,27 @@ import { BlogComponent } from './blog/blog.component';
     FootertopComponent,
     HomepageComponent,
     ContentComponent,
-    BlogComponent
+    BlogComponent,
+    LandingComponent
   ],
   imports: [
     CommonModule,
     ServerModule,
     UserModule
+  ],
+  exports:[
+    HeaderComponent,
+    FooterComponent,
+    SidebarComponent,
+    SecondheaderComponent,
+    RightsidebarComponent,
+    LeftsidebarComponent,
+    FootertopComponent,
+    HomepageComponent,
+    ContentComponent,
+    BlogComponent,
+    LandingComponent
+
   ]
 })
 export class UicomponentModule { }
