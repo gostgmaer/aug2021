@@ -12,4 +12,21 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onheadhomeclick(){
+    console.log('Home Page Click Event Working')
+  }
+  onheadaboutclick(){
+    console.log('About Click Event Working')
+  }
+  onheadcontentclick(){
+    console.log('Content Click Event Working')
+  }
+  onheadlogin(){
+    console.log('Header Login Click Event Working')
+  }
+  onheaduser(){
+    console.log('Header Signup Click Event Working')
+  }
+
 }
+
