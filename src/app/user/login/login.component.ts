@@ -11,5 +11,20 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  loginbtn(){
+
+  }
+  forgetpass(){
+
+  }
+  signupbtn(){
+
+  }
+  returnhome(){
+
+  }
+  terms(){
+
+  }
 
 }

@@ -12,4 +12,23 @@ export class HomepageComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  loginpagehome(){
+
+  }
+  learnmorehome(){
+
+  }
+  calltoaction1(){
+
+  }
+  calltoaction2(){
+
+  }
+  calltoaction3(){
+
+  }
+  homecontact(){
+
+  }
+
 }
