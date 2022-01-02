@@ -1,20 +1,25 @@
 <div class="container">
   <div class="row">
-    <div class="col-xs-12">
-      <ol>
-        <li>
-          You must have at least two items in a list (or it’s not a list; it’s just an item). </li>
+    <div class="col">
+      <ol class="">
+        <li>You must have at least two items in a list (or it’s not a list; it’s just an item).</li>
         <li>If you emphasize too many ideas, you end up emphasizing nothing</li>
         <li>Avoid having more than 8 items in a list, as too many items can have the reverse effect.</li>
+        <li>Adjust spacing before, after, and within lists to enhance readability</li>
+        <li>Avoid having a list of information all scrunched up into a dense block of text; this defeats the purpose of enhancing readability.</li>
       </ol>
       <hr>
-      <div class="d-flex">
-
-
+      <div class="d-flex p-2">
       <label for="username">Username</label>
-    <!--   <input type="text" name="username" id="username" class="form-control" [(ngModel)]="userssss"> -->
+      <input type="text" name="username" id="username" class="form-control" >
     </div>
-      <p>{{userssss}}</p>
+    <div class="d-flex  p-2">
+      <label for="pass">Password</label>
+      <input type="password" name="password" id="pass" class="form-control">
     </div>
+      <p>{{username}}</p>
+      <p>{{pass}}</p>
+    </div>
+   <div class="btn btn-primary d-flex"  [hidden]="username !='nna'" >Reset User</div>
   </div>
 </div>

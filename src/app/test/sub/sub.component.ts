@@ -11,7 +11,8 @@ export class SubComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  userssss="";
+  username="";
+  pass="";
 
 }
 
