@@ -20,7 +20,7 @@ const routes: Routes = [
   { path: 'home', component: LandingComponent },
   { path: 'homepage', component: HomepageComponent },
   { path: 'blog', component:BlogComponent},
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+ /*  { path: '', redirectTo: '/home', pathMatch: 'full' }, */
   { path: '**', component: NotFoundComponent }
 ];
 
