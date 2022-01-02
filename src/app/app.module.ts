@@ -7,6 +7,7 @@ import { UicomponentModule } from './uicomponent/uicomponent.module';
 import { UserModule } from './user/user.module';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
+import { TestModule } from './test/test.module';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,9 @@ import { AppRoutingModule } from './app-routing.module';
     UicomponentModule,
     ServerModule,
     UicomponentRoutingModule,
-    FormsModule
+    FormsModule,
+    TestModule
+    
 
   ],
   providers: [],
